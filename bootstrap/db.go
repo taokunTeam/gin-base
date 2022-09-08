@@ -1,13 +1,14 @@
 package bootstrap
 
 import (
-	"gin-base/app/models"
-	"gin-base/global"
 	"io"
 	"log"
 	"os"
 	"strconv"
 	"time"
+
+	"github.com/taokunTeam/gin-base/app/models"
+	"github.com/taokunTeam/gin-base/global"
 
 	"go.uber.org/zap"
 	"gopkg.in/natefinch/lumberjack.v2"

@@ -1,9 +1,10 @@
 package bootstrap
 
 import (
-	"gin-base/utils"
 	"reflect"
 	"strings"
+
+	"github.com/taokunTeam/gin-base/utils"
 
 	"github.com/gin-gonic/gin/binding"
 	"github.com/go-playground/validator/v10"

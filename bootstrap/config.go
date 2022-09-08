@@ -2,8 +2,9 @@ package bootstrap
 
 import (
 	"fmt"
-	"gin-base/global"
 	"os"
+
+	"github.com/taokunTeam/gin-base/global"
 
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/viper"

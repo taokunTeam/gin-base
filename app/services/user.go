@@ -2,11 +2,12 @@ package services
 
 import (
 	"errors"
-	"gin-base/app/common/request"
-	"gin-base/app/models"
-	"gin-base/global"
-	"gin-base/utils"
 	"strconv"
+
+	"github.com/taokunTeam/gin-base/app/common/request"
+	"github.com/taokunTeam/gin-base/app/models"
+	"github.com/taokunTeam/gin-base/global"
+	"github.com/taokunTeam/gin-base/utils"
 )
 
 type userService struct {

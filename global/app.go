@@ -1,7 +1,7 @@
 package global
 
 import (
-	"gin-base/config"
+	"github.com/taokunTeam/gin-base/config"
 
 	"github.com/go-redis/redis/v8"
 	"github.com/spf13/viper"

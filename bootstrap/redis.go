@@ -2,8 +2,9 @@ package bootstrap
 
 import (
 	"context"
-	"gin-base/global"
 	"strconv"
+
+	"github.com/taokunTeam/gin-base/global"
 
 	"github.com/go-redis/redis/v8"
 	"go.uber.org/zap"

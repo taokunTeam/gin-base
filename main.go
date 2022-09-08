@@ -1,8 +1,8 @@
 package main
 
 import (
-	"gin-base/bootstrap"
-	"gin-base/global"
+	"github.com/taokunTeam/gin-base/bootstrap"
+	"github.com/taokunTeam/gin-base/global"
 )
 
 func main() {

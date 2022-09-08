@@ -3,10 +3,11 @@ package services
 import (
 	"context"
 	"errors"
-	"gin-base/global"
-	"gin-base/utils"
 	"strconv"
 	"time"
+
+	"github.com/taokunTeam/gin-base/global"
+	"github.com/taokunTeam/gin-base/utils"
 
 	"github.com/dgrijalva/jwt-go"
 )

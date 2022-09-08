@@ -1,7 +1,7 @@
 package bootstrap
 
 import (
-	"gin-base/global"
+	"github.com/taokunTeam/gin-base/global"
 
 	"github.com/taokunTeam/go-storage/kodo"
 	"github.com/taokunTeam/go-storage/local"

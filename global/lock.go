@@ -2,8 +2,9 @@ package global
 
 import (
 	"context"
-	"gin-base/utils"
 	"time"
+
+	"github.com/taokunTeam/gin-base/utils"
 
 	"github.com/go-redis/redis/v8"
 )

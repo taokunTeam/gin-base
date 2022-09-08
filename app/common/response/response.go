@@ -1,8 +1,9 @@
 package response
 
 import (
-	"gin-base/global"
 	"net/http"
+
+	"github.com/taokunTeam/gin-base/global"
 
 	"github.com/gin-gonic/gin"
 )

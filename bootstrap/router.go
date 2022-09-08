@@ -2,14 +2,15 @@ package bootstrap
 
 import (
 	"context"
-	"gin-base/global"
-	"gin-base/routes"
 	"log"
 	"net/http"
 	"os"
 	"os/signal"
 	"syscall"
 	"time"
+
+	"github.com/taokunTeam/gin-base/global"
+	"github.com/taokunTeam/gin-base/routes"
 
 	"github.com/gin-gonic/gin"
 )

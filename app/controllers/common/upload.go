@@ -1,9 +1,9 @@
 package common
 
 import (
-	"gin-base/app/common/request"
-	"gin-base/app/common/response"
-	"gin-base/app/services"
+	"github.com/taokunTeam/gin-base/app/common/request"
+	"github.com/taokunTeam/gin-base/app/common/response"
+	"github.com/taokunTeam/gin-base/app/services"
 
 	"github.com/gin-gonic/gin"
 )

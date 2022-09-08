@@ -1,5 +1,5 @@
 
-2022/09/07 14:51:55 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:46
+2022/09/07 14:51:55 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:46
 [error] failed to initialize database, got error Error 1045: Access denied for user 'jiahong'@'114.91.12.163' (using password: YES)
 
 2022/09/07 14:56:06 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -8,10 +8,10 @@
 2022/09/07 14:56:06 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [77.095ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/07 14:56:06 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/07 14:56:06 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [74.724ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
-2022/09/07 14:56:06 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/07 14:56:06 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [62.512ms] [rows:0] CREATE TABLE `users` (`id` bigint unsigned AUTO_INCREMENT,`name` varchar(191) NOT NULL COMMENT '用户名称',`mobile` varchar(191) NOT NULL COMMENT '用户手机号',`password` varchar(191) NOT NULL DEFAULT '' COMMENT '用户密码',`created_at` datetime NULL,`updated_at` datetime NULL,`deleted_at` datetime NULL,PRIMARY KEY (`id`),INDEX `idx_users_mobile` (`mobile`),INDEX `idx_users_deleted_at` (`deleted_at`))
 
 2022/09/07 17:29:33 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -20,7 +20,7 @@
 2022/09/07 17:29:33 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [72.681ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/07 17:29:33 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/07 17:29:33 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [80.518ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/07 17:29:33 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -41,7 +41,7 @@
 2022/09/07 17:29:34 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [75.939ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/07 17:29:34 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/07 17:29:34 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [75.426ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/07 17:29:34 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -50,7 +50,7 @@
 2022/09/07 17:29:34 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [73.797ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/07 17:29:34 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/07 17:29:34 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [73.492ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 09:01:17 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -59,7 +59,7 @@
 2022/09/08 09:01:17 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [74.702ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 09:01:17 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 09:01:17 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [73.260ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 09:01:17 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -80,7 +80,7 @@
 2022/09/08 09:01:17 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [73.561ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 09:01:18 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 09:01:18 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [73.294ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 09:01:18 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -89,7 +89,7 @@
 2022/09/08 09:01:18 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [71.345ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 09:01:18 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 09:01:18 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [73.526ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 12:50:36 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -98,7 +98,7 @@
 2022/09/08 12:50:36 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [86.090ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 12:50:36 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 12:50:36 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [72.670ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 12:50:36 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -119,7 +119,7 @@
 2022/09/08 12:50:37 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [84.842ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 12:50:37 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 12:50:37 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [106.576ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 12:50:37 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -128,7 +128,7 @@
 2022/09/08 12:50:37 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [128.408ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 12:50:37 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 12:50:37 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [82.918ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:05:39 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -137,7 +137,7 @@
 2022/09/08 13:05:39 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [74.680ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:05:39 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:05:39 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [76.878ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:05:39 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -158,7 +158,7 @@
 2022/09/08 13:05:39 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [75.999ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:05:39 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:05:39 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [75.817ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:05:39 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -167,7 +167,7 @@
 2022/09/08 13:05:39 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [73.803ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:05:39 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:05:39 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [81.026ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:08:43 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -176,7 +176,7 @@
 2022/09/08 13:08:43 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [87.259ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:08:43 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:08:43 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [77.305ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:08:43 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -197,7 +197,7 @@
 2022/09/08 13:08:43 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [85.694ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:08:43 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:08:43 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [76.940ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:08:43 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -206,7 +206,7 @@
 2022/09/08 13:08:43 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [75.805ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:08:44 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:08:44 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [74.936ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:10:56 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -215,7 +215,7 @@
 2022/09/08 13:10:56 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [78.064ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:10:56 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:10:56 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [75.282ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:10:56 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -236,7 +236,7 @@
 2022/09/08 13:10:57 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [79.286ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:10:57 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:10:57 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [76.636ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:10:57 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -245,7 +245,7 @@
 2022/09/08 13:10:57 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253 SLOW SQL >= 200ms
 [319.302ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:10:57 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:10:57 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [78.626ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:10:59 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -254,7 +254,7 @@
 2022/09/08 13:10:59 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [72.822ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:10:59 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:10:59 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [72.855ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:10:59 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -275,7 +275,7 @@
 2022/09/08 13:11:00 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [74.030ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:11:00 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:11:00 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [74.823ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:11:00 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -284,7 +284,7 @@
 2022/09/08 13:11:00 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [70.687ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:11:00 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:11:00 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [72.938ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:11:05 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -293,7 +293,7 @@
 2022/09/08 13:11:05 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [76.631ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:11:05 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:11:05 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [80.317ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:11:05 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -314,7 +314,7 @@
 2022/09/08 13:11:05 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [75.537ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:11:05 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:11:05 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [143.148ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:11:05 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -323,13 +323,13 @@
 2022/09/08 13:11:05 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [77.887ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:11:05 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:11:05 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [72.906ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
-2022/09/08 13:13:19 /data/wwwroot/gocode/src/gin-base/app/services/user.go:18 record not found
+2022/09/08 13:13:19 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/app/services/user.go:18 record not found
 [81.777ms] [rows:0] SELECT `id` FROM `users` WHERE mobile = '18721934607' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
 
-2022/09/08 13:13:19 /data/wwwroot/gocode/src/gin-base/app/services/user.go:24
+2022/09/08 13:13:19 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/app/services/user.go:24
 [155.115ms] [rows:1] INSERT INTO `users` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`) VALUES ('likangjian','18721934607','$2a$04$AYbjuINzaLmadAG4pCXJfu2hp48du2LmCikjF0Oto7uMLAFX.ORTG','2022-09-08 13:13:19.606','2022-09-08 13:13:19.606',NULL)
 
 2022/09/08 13:15:17 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -338,7 +338,7 @@
 2022/09/08 13:15:17 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [78.625ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:15:17 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:15:17 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [76.272ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:15:17 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -359,7 +359,7 @@
 2022/09/08 13:15:18 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [76.655ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:15:18 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:15:18 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [73.863ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:15:18 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -368,7 +368,7 @@
 2022/09/08 13:15:18 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [78.143ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:15:18 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:15:18 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [133.922ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:15:40 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -377,7 +377,7 @@
 2022/09/08 13:15:40 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [70.864ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:15:40 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:15:40 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [73.412ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:15:40 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -398,7 +398,7 @@
 2022/09/08 13:15:41 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253 SLOW SQL >= 200ms
 [312.606ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:15:41 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:15:41 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [72.240ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:15:41 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -407,7 +407,7 @@
 2022/09/08 13:15:41 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [74.531ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:15:41 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:15:41 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [75.898ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:16:45 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -416,7 +416,7 @@
 2022/09/08 13:16:45 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [75.248ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:16:45 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:16:45 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [79.081ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:16:45 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -437,7 +437,7 @@
 2022/09/08 13:16:45 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [75.302ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:16:45 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:16:45 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [81.997ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:16:45 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -446,7 +446,7 @@
 2022/09/08 13:16:45 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [70.777ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:16:45 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:16:45 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [74.805ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:18:23 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -455,7 +455,7 @@
 2022/09/08 13:18:24 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [81.035ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:18:24 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:18:24 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [75.275ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:18:24 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -476,7 +476,7 @@
 2022/09/08 13:18:24 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [74.519ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:18:24 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:18:24 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [74.480ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:18:24 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -485,7 +485,7 @@
 2022/09/08 13:18:24 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [79.079ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:18:24 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:18:24 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [75.189ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:18:25 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -494,7 +494,7 @@
 2022/09/08 13:18:25 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [77.106ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:18:25 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:18:25 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [76.021ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:18:25 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -515,7 +515,7 @@
 2022/09/08 13:18:25 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [76.785ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:18:26 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107 SLOW SQL >= 200ms
+2022/09/08 13:18:26 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107 SLOW SQL >= 200ms
 [406.724ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:18:26 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -524,7 +524,7 @@
 2022/09/08 13:18:26 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [76.743ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:18:26 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:18:26 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [73.723ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:19:09 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -533,7 +533,7 @@
 2022/09/08 13:19:09 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [72.788ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:19:09 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:19:09 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [67.785ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:19:09 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -554,7 +554,7 @@
 2022/09/08 13:19:09 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [81.933ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:19:09 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:19:09 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [67.771ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:19:09 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -569,7 +569,7 @@
 2022/09/08 13:19:12 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [75.952ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:19:12 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:19:12 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [93.497ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:19:12 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -590,7 +590,7 @@
 2022/09/08 13:19:13 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [87.322ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:19:13 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:19:13 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [78.060ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:19:13 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -599,7 +599,7 @@
 2022/09/08 13:19:13 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [89.258ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:19:13 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:19:13 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [85.351ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:19:49 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -608,7 +608,7 @@
 2022/09/08 13:19:49 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [76.113ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:19:49 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:19:49 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [76.880ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:19:50 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -629,7 +629,7 @@
 2022/09/08 13:19:50 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [86.372ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:19:50 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:19:50 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [81.038ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:19:50 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -638,7 +638,7 @@
 2022/09/08 13:19:50 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [72.610ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:19:50 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:19:50 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [76.288ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:20:44 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -647,7 +647,7 @@
 2022/09/08 13:20:44 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [75.776ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:20:44 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:20:44 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [87.150ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:20:44 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -668,7 +668,7 @@
 2022/09/08 13:20:44 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [70.738ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:20:44 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:20:44 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [71.938ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:20:44 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -677,7 +677,7 @@
 2022/09/08 13:20:44 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [70.645ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:20:45 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:20:45 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [82.999ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:21:12 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -686,7 +686,7 @@
 2022/09/08 13:21:12 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [69.546ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:21:12 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:21:12 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [70.964ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:21:12 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -707,7 +707,7 @@
 2022/09/08 13:21:13 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [70.951ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:21:13 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:21:13 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [70.194ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:21:13 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -716,7 +716,7 @@
 2022/09/08 13:21:13 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [66.978ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:21:13 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:21:13 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [73.590ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:21:15 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -725,7 +725,7 @@
 2022/09/08 13:21:15 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [74.193ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:21:15 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:21:15 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [74.466ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:21:15 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -746,7 +746,7 @@
 2022/09/08 13:21:16 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [74.409ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:21:16 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:21:16 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [75.710ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:21:16 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -755,10 +755,10 @@
 2022/09/08 13:21:16 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [67.093ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:21:16 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:21:16 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [74.457ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
-2022/09/08 13:22:21 /data/wwwroot/gocode/src/gin-base/app/services/user.go:30
+2022/09/08 13:22:21 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/app/services/user.go:30
 [86.785ms] [rows:1] SELECT * FROM `users` WHERE mobile = '18721934607' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
 
 2022/09/08 13:23:38 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -767,7 +767,7 @@
 2022/09/08 13:23:38 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [76.107ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:23:38 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:23:38 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [75.024ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:23:38 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -788,7 +788,7 @@
 2022/09/08 13:23:39 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [74.459ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:23:39 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:23:39 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [72.869ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:23:39 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -797,7 +797,7 @@
 2022/09/08 13:23:39 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [76.604ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:23:39 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:23:39 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [74.398ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:23:47 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -806,7 +806,7 @@
 2022/09/08 13:23:47 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [73.270ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:23:47 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:23:47 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [75.170ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:23:47 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -827,7 +827,7 @@
 2022/09/08 13:23:48 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [73.940ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:23:48 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:23:48 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [73.818ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:23:48 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -836,7 +836,7 @@
 2022/09/08 13:23:48 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [71.942ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:23:48 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:23:48 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [73.262ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:24:18 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -845,7 +845,7 @@
 2022/09/08 13:24:18 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [74.384ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:24:18 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:24:18 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [77.785ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:24:18 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -866,7 +866,7 @@
 2022/09/08 13:24:18 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [120.995ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:24:18 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:24:18 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [75.720ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:24:18 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -875,7 +875,7 @@
 2022/09/08 13:24:19 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [91.790ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:24:19 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:24:19 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [82.590ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:24:47 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -884,7 +884,7 @@
 2022/09/08 13:24:47 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [77.062ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:24:47 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:24:47 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [78.641ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:24:47 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -905,7 +905,7 @@
 2022/09/08 13:24:48 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [85.141ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:24:48 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:24:48 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [86.557ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:24:48 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -914,7 +914,7 @@
 2022/09/08 13:24:48 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [79.652ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:24:48 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:24:48 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [79.831ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:24:57 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -923,7 +923,7 @@
 2022/09/08 13:24:57 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [78.361ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:24:57 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:24:57 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [80.586ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:24:57 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -944,7 +944,7 @@
 2022/09/08 13:24:57 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [73.785ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:24:57 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:24:57 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [80.862ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:24:57 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -953,7 +953,7 @@
 2022/09/08 13:24:57 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [77.566ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:24:57 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:24:57 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [75.441ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:25:03 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -962,7 +962,7 @@
 2022/09/08 13:25:03 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [69.978ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:25:03 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:25:03 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [74.584ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:25:03 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -983,7 +983,7 @@
 2022/09/08 13:25:03 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [74.681ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:25:03 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:25:03 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [78.987ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:25:03 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -992,7 +992,7 @@
 2022/09/08 13:25:03 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [73.822ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:25:03 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:25:03 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [81.713ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:25:06 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1001,7 +1001,7 @@
 2022/09/08 13:25:06 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [128.011ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:25:06 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:25:06 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [82.417ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:25:06 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1022,7 +1022,7 @@
 2022/09/08 13:25:06 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [80.102ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:25:06 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:25:06 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [79.384ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:25:06 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1031,7 +1031,7 @@
 2022/09/08 13:25:07 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [75.560ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:25:07 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:25:07 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [81.251ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:25:12 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1040,7 +1040,7 @@
 2022/09/08 13:25:12 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [75.828ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:25:12 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:25:12 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [79.410ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:25:12 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1061,7 +1061,7 @@
 2022/09/08 13:25:13 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [70.546ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:25:13 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:25:13 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [74.370ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:25:13 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1070,7 +1070,7 @@
 2022/09/08 13:25:13 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [76.725ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:25:13 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:25:13 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [82.914ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:25:15 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1079,7 +1079,7 @@
 2022/09/08 13:25:15 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [72.297ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:25:16 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:25:16 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [72.154ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:25:16 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1100,7 +1100,7 @@
 2022/09/08 13:25:16 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [72.467ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:25:16 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:25:16 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [72.111ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:25:16 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1109,7 +1109,7 @@
 2022/09/08 13:25:16 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [70.683ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:25:16 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:25:16 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [72.727ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:28:49 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1118,7 +1118,7 @@
 2022/09/08 13:28:49 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [74.972ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:28:49 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:28:49 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [76.819ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:28:49 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1139,7 +1139,7 @@
 2022/09/08 13:28:49 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [69.638ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:28:49 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:28:49 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [75.648ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:28:49 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1148,7 +1148,7 @@
 2022/09/08 13:28:49 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [73.660ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:28:50 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:28:50 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [76.545ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:29:27 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1157,7 +1157,7 @@
 2022/09/08 13:29:27 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [95.905ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:29:27 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:29:27 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [69.311ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:29:27 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1178,7 +1178,7 @@
 2022/09/08 13:29:27 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [75.730ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:29:27 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:29:27 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [84.251ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:29:27 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1187,13 +1187,13 @@
 2022/09/08 13:29:27 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [72.773ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:29:28 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:29:28 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [70.369ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
-2022/09/08 13:30:38 /data/wwwroot/gocode/src/gin-base/app/services/user.go:31
+2022/09/08 13:30:38 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/app/services/user.go:31
 [110.284ms] [rows:1] SELECT * FROM `users` WHERE mobile = '18721934607' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
 
-2022/09/08 13:31:03 /data/wwwroot/gocode/src/gin-base/app/services/user.go:41
+2022/09/08 13:31:03 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/app/services/user.go:41
 [71.773ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
 
 2022/09/08 13:32:36 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1202,7 +1202,7 @@
 2022/09/08 13:32:36 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253 SLOW SQL >= 200ms
 [324.801ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:32:36 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:32:36 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [77.186ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:32:36 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1223,7 +1223,7 @@
 2022/09/08 13:32:37 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [69.122ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:32:37 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:32:37 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [77.398ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:32:37 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1232,7 +1232,7 @@
 2022/09/08 13:32:37 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [74.874ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:32:37 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:32:37 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [77.366ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:32:54 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1241,7 +1241,7 @@
 2022/09/08 13:32:54 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [74.763ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:32:55 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:32:55 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [72.447ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:32:55 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1262,7 +1262,7 @@
 2022/09/08 13:32:55 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [73.052ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:32:55 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:32:55 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [71.302ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:32:55 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1271,7 +1271,7 @@
 2022/09/08 13:32:55 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [70.057ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:32:55 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:32:55 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [71.168ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:33:19 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1280,7 +1280,7 @@
 2022/09/08 13:33:19 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [74.228ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:33:19 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:33:19 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [72.311ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:33:19 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1295,7 +1295,7 @@
 2022/09/08 13:33:20 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [82.864ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:33:20 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:33:20 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [81.527ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:33:20 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1316,7 +1316,7 @@
 2022/09/08 13:33:20 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [76.975ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:33:20 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:33:20 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [89.284ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:33:20 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1325,7 +1325,7 @@
 2022/09/08 13:33:21 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [78.253ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:33:21 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:33:21 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [78.087ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:37:54 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1334,7 +1334,7 @@
 2022/09/08 13:37:54 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [74.058ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:37:54 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:37:54 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [76.787ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:37:54 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1355,7 +1355,7 @@
 2022/09/08 13:37:54 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [74.119ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:37:54 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:37:54 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [71.017ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:37:54 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1364,7 +1364,7 @@
 2022/09/08 13:37:54 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [71.857ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:37:54 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:37:54 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [75.132ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:37:56 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1373,7 +1373,7 @@
 2022/09/08 13:37:56 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [76.812ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:37:56 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:37:56 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [79.703ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:37:56 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1394,7 +1394,7 @@
 2022/09/08 13:37:56 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [75.411ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:37:56 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:37:56 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [73.380ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:37:56 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1403,7 +1403,7 @@
 2022/09/08 13:37:56 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [76.724ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:37:56 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:37:56 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [76.762ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:43:28 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1412,7 +1412,7 @@
 2022/09/08 13:43:28 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [77.537ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:43:28 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:43:28 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [76.832ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:43:28 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1433,7 +1433,7 @@
 2022/09/08 13:43:29 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [76.677ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:43:29 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:43:29 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [73.671ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:43:29 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1442,7 +1442,7 @@
 2022/09/08 13:43:29 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [76.025ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:43:29 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:43:29 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [77.106ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:44:29 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1451,7 +1451,7 @@
 2022/09/08 13:44:29 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [73.429ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:44:29 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:44:29 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [72.868ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:44:29 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1472,7 +1472,7 @@
 2022/09/08 13:44:29 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [73.967ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:44:29 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:44:29 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [75.689ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:44:29 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1481,7 +1481,7 @@
 2022/09/08 13:44:30 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [85.610ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:44:30 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:44:30 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [73.494ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:45:29 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1490,7 +1490,7 @@
 2022/09/08 13:45:29 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [71.965ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:45:29 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:45:29 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [74.539ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:45:30 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1511,7 +1511,7 @@
 2022/09/08 13:45:30 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [70.492ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:45:30 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:45:30 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [73.123ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:45:30 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1520,7 +1520,7 @@
 2022/09/08 13:45:30 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [75.297ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:45:30 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:45:30 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [75.952ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:46:44 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1529,7 +1529,7 @@
 2022/09/08 13:46:45 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [74.010ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:46:45 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:46:45 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [72.385ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:46:45 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1550,7 +1550,7 @@
 2022/09/08 13:46:45 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [88.185ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:46:45 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:46:45 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [72.076ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:46:45 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1559,7 +1559,7 @@
 2022/09/08 13:46:45 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [71.464ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:46:45 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:46:45 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [72.573ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:47:24 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1568,7 +1568,7 @@
 2022/09/08 13:47:25 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [82.065ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:47:25 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:47:25 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [74.630ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:47:25 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1589,7 +1589,7 @@
 2022/09/08 13:47:25 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [85.122ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:47:25 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:47:25 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [77.758ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:47:25 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1598,7 +1598,7 @@
 2022/09/08 13:47:25 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [76.943ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:47:25 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:47:25 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [75.726ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:48:14 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1607,7 +1607,7 @@
 2022/09/08 13:48:14 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [74.710ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:48:15 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:48:15 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [74.527ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:48:15 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1628,7 +1628,7 @@
 2022/09/08 13:48:15 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [79.028ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:48:15 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:48:15 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [79.460ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:48:15 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1637,7 +1637,7 @@
 2022/09/08 13:48:15 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [75.802ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:48:15 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:48:15 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [80.405ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:54:03 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1646,7 +1646,7 @@
 2022/09/08 13:54:03 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [84.480ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:54:03 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:54:03 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [74.331ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:54:03 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1667,7 +1667,7 @@
 2022/09/08 13:54:03 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [93.022ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:54:03 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:54:03 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [75.454ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:54:03 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1676,7 +1676,7 @@
 2022/09/08 13:54:03 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [94.042ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:54:03 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:54:03 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [73.510ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/08 13:57:24 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1685,7 +1685,7 @@
 2022/09/08 13:57:25 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [76.821ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:57:25 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:57:25 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [80.886ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 13:57:25 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1706,7 +1706,7 @@
 2022/09/08 13:57:25 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [76.723ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:57:25 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:57:25 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [89.530ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 13:57:25 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1715,10 +1715,10 @@
 2022/09/08 13:57:25 /data/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [75.109ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 13:57:25 /data/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 13:57:25 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [76.254ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
-2022/09/08 13:57:36 /data/wwwroot/gocode/src/gin-base/app/services/user.go:31
+2022/09/08 13:57:36 /data/wwwroot/gocode/src/github.com/taokunTeam/gin-base/app/services/user.go:31
 [78.695ms] [rows:1] SELECT * FROM `users` WHERE mobile = '18721934607' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
 
 2022/09/08 21:35:50 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1727,7 +1727,7 @@
 2022/09/08 21:35:50 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [177.026ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 21:35:50 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 21:35:50 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [102.766ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/08 21:35:50 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1748,7 +1748,7 @@
 2022/09/08 21:35:51 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [163.518ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 21:35:51 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 21:35:51 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [133.926ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/08 21:35:51 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1757,10 +1757,10 @@
 2022/09/08 21:35:51 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [145.478ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 21:35:51 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 21:35:51 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [138.918ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
-2022/09/08 21:50:49 /Users/likangjian/wwwroot/gocode/src/gin-base/app/services/user.go:19
+2022/09/08 21:50:49 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/app/services/user.go:19
 [71.484ms] [rows:1] SELECT `id` FROM `users` WHERE mobile = '18721934607' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
 
 2022/09/08 21:54:24 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1769,25 +1769,25 @@
 2022/09/08 21:54:24 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [16.894ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/08 21:54:24 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 21:54:24 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [15.512ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
-2022/09/08 21:54:24 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/08 21:54:24 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [77.340ms] [rows:0] CREATE TABLE `users` (`id` bigint unsigned AUTO_INCREMENT,`name` varchar(191) NOT NULL COMMENT '用户名称',`mobile` varchar(191) NOT NULL COMMENT '用户手机号',`password` varchar(191) NOT NULL DEFAULT '' COMMENT '用户密码',`created_at` datetime NULL,`updated_at` datetime NULL,`deleted_at` datetime NULL,PRIMARY KEY (`id`),INDEX `idx_users_mobile` (`mobile`),INDEX `idx_users_deleted_at` (`deleted_at`))
 
-2022/09/08 21:54:44 /Users/likangjian/wwwroot/gocode/src/gin-base/app/services/user.go:19 record not found
+2022/09/08 21:54:44 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/app/services/user.go:19 record not found
 [21.438ms] [rows:0] SELECT `id` FROM `users` WHERE mobile = '18721934607' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
 
-2022/09/08 21:54:45 /Users/likangjian/wwwroot/gocode/src/gin-base/app/services/user.go:25
+2022/09/08 21:54:45 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/app/services/user.go:25
 [41.360ms] [rows:1] INSERT INTO `users` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`) VALUES ('likangjian','18721934607','$2a$04$sVDB.NEvDw6p50qcUpJZz.PCEGj3gxqJYIUJMQ6R8xYQrvI4C0Qem','2022-09-08 21:54:44.982','2022-09-08 21:54:44.982',NULL)
 
-2022/09/08 22:48:26 /Users/likangjian/wwwroot/gocode/src/gin-base/app/services/user.go:31
+2022/09/08 22:48:26 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/app/services/user.go:31
 [15.755ms] [rows:1] SELECT * FROM `users` WHERE mobile = '18721934607' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
 
-2022/09/08 22:48:50 /Users/likangjian/wwwroot/gocode/src/gin-base/app/services/user.go:41
+2022/09/08 22:48:50 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/app/services/user.go:41
 [14.666ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
 
-2022/09/08 22:48:50 /Users/likangjian/wwwroot/gocode/src/gin-base/app/services/user.go:41
+2022/09/08 22:48:50 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/app/services/user.go:41
 [14.564ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
 
 2022/09/09 01:53:46 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1796,7 +1796,7 @@
 2022/09/09 01:53:46 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [11.270ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 01:53:46 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 01:53:46 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [11.001ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/09 01:53:46 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1817,7 +1817,7 @@
 2022/09/09 01:53:46 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [11.623ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 01:53:46 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 01:53:46 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [12.492ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/09 01:53:46 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1826,7 +1826,7 @@
 2022/09/09 01:53:46 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [11.391ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 01:53:46 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 01:53:46 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [11.349ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/09 01:55:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1835,7 +1835,7 @@
 2022/09/09 01:55:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [13.912ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 01:55:20 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 01:55:20 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [13.099ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/09 01:55:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1856,7 +1856,7 @@
 2022/09/09 01:55:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [12.625ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 01:55:20 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 01:55:20 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [13.120ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/09 01:55:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1865,7 +1865,7 @@
 2022/09/09 01:55:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [11.894ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 01:55:20 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 01:55:20 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [13.158ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/09 01:56:37 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1874,7 +1874,7 @@
 2022/09/09 01:56:37 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [12.254ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 01:56:37 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 01:56:37 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [12.498ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/09 01:56:37 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1895,7 +1895,7 @@
 2022/09/09 01:56:37 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [11.664ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 01:56:37 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 01:56:37 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [12.471ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/09 01:56:37 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1904,7 +1904,7 @@
 2022/09/09 01:56:37 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [12.529ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 01:56:37 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 01:56:37 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [12.285ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/09 01:56:37 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1913,10 +1913,10 @@
 2022/09/09 01:56:37 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [15.166ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 01:56:37 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 01:56:37 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [12.601ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
 
-2022/09/09 01:56:37 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 01:56:37 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [57.941ms] [rows:0] CREATE TABLE `media` (`id` bigint unsigned AUTO_INCREMENT,`disk_type` varchar(20) NOT NULL COMMENT '存储类型',`src_type` tinyint NOT NULL COMMENT '链接类型 1相对路径 2外链',`src` varchar(191) NOT NULL COMMENT '资源链接',`created_at` datetime NULL,`updated_at` datetime NULL,PRIMARY KEY (`id`),INDEX `idx_media_disk_type` (`disk_type`))
 
 2022/09/09 01:57:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1925,7 +1925,7 @@
 2022/09/09 01:57:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [11.151ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 01:57:20 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 01:57:20 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [12.755ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/09 01:57:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1946,7 +1946,7 @@
 2022/09/09 01:57:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [17.156ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 01:57:20 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 01:57:20 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [14.481ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/09 01:57:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1955,7 +1955,7 @@
 2022/09/09 01:57:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [11.216ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 01:57:20 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 01:57:20 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [11.214ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/09 01:57:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1964,7 +1964,7 @@
 2022/09/09 01:57:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [11.268ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 01:57:20 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 01:57:20 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [11.432ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
 
 2022/09/09 01:57:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1985,7 +1985,7 @@
 2022/09/09 01:57:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [11.517ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 01:57:21 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 01:57:21 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [11.024ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
 
 2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -1994,7 +1994,7 @@
 2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [12.527ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [12.863ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -2015,7 +2015,7 @@
 2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [11.510ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [12.056ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -2024,7 +2024,7 @@
 2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [11.640ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [11.181ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -2033,7 +2033,7 @@
 2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [11.494ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [13.403ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
 
 2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -2054,7 +2054,7 @@
 2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [11.890ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 02:10:17 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [11.590ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
 
 2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -2063,7 +2063,7 @@
 2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [14.187ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [14.986ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
 
 2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -2084,7 +2084,7 @@
 2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [13.935ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [14.366ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
 
 2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -2093,7 +2093,7 @@
 2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [13.662ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [13.455ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
 
 2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -2102,7 +2102,7 @@
 2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [13.668ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [14.013ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
 
 2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
@@ -2123,20 +2123,20 @@
 2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
 [13.434ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
 
-2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:107
+2022/09/09 02:10:28 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/bootstrap/db.go:107
 [13.547ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
 
-2022/09/09 02:10:35 /Users/likangjian/wwwroot/gocode/src/gin-base/app/services/user.go:41
+2022/09/09 02:10:35 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/app/services/user.go:41
 [13.641ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
 
-2022/09/09 02:12:42 /Users/likangjian/wwwroot/gocode/src/gin-base/app/services/user.go:31
+2022/09/09 02:12:42 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/app/services/user.go:31
 [14.513ms] [rows:1] SELECT * FROM `users` WHERE mobile = '18721934607' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
 
-2022/09/09 02:12:45 /Users/likangjian/wwwroot/gocode/src/gin-base/app/services/user.go:31
+2022/09/09 02:12:45 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/app/services/user.go:31
 [14.301ms] [rows:1] SELECT * FROM `users` WHERE mobile = '18721934607' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
 
-2022/09/09 02:13:06 /Users/likangjian/wwwroot/gocode/src/gin-base/app/services/user.go:41
+2022/09/09 02:13:06 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/app/services/user.go:41
 [17.779ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
 
-2022/09/09 02:13:07 /Users/likangjian/wwwroot/gocode/src/gin-base/app/services/media.go:70
+2022/09/09 02:13:07 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/app/services/media.go:70
 [37.113ms] [rows:1] INSERT INTO `media` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`) VALUES ('local',1,'local/test/20dbb71a-68d7-4a1c-93f6-b0ae5dd3c938.png','2022-09-09 02:13:07.015','2022-09-09 02:13:07.015')

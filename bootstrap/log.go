@@ -1,10 +1,11 @@
 package bootstrap
 
 import (
-	"gin-base/global"
-	"gin-base/utils"
 	"os"
 	"time"
+
+	"github.com/taokunTeam/gin-base/global"
+	"github.com/taokunTeam/gin-base/utils"
 
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"

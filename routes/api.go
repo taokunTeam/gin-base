@@ -1,12 +1,13 @@
 package routes
 
 import (
-	"gin-base/app/controllers/app"
-	"gin-base/app/controllers/common"
-	"gin-base/app/middleware"
-	"gin-base/app/services"
 	"net/http"
 	"time"
+
+	"github.com/taokunTeam/gin-base/app/controllers/app"
+	"github.com/taokunTeam/gin-base/app/controllers/common"
+	"github.com/taokunTeam/gin-base/app/middleware"
+	"github.com/taokunTeam/gin-base/app/services"
 
 	"github.com/gin-gonic/gin"
 )

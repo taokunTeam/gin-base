@@ -1,11 +1,12 @@
 package middleware
 
 import (
-	"gin-base/app/common/response"
-	"gin-base/app/services"
-	"gin-base/global"
 	"strconv"
 	"time"
+
+	"github.com/taokunTeam/gin-base/app/common/response"
+	"github.com/taokunTeam/gin-base/app/services"
+	"github.com/taokunTeam/gin-base/global"
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
