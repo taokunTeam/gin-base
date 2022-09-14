@@ -10,7 +10,7 @@ require (
 	github.com/go-redis/redis/v8 v8.11.5
 	github.com/gofrs/uuid v4.2.0+incompatible
 	github.com/spf13/viper v1.13.0
-	github.com/taokunTeam/go-storage v0.0.0-20220913153708-b037fb9e3cb3
+	github.com/taokunTeam/go-storage v0.0.0-20220914093812-6b2bb9e238d4
 	go.uber.org/zap v1.23.0
 	golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0
