@@ -1,6 +1,8 @@
 package global
 
 import (
+	"fmt"
+
 	"github.com/taokunTeam/gin-base/config"
 
 	"github.com/go-redis/redis/v8"
@@ -23,6 +25,7 @@ var App = new(Application)
 func (app *Application) Disk(disk ...string) storage.Storage {
 	// 若未传参，默认使用配置文件驱动
 	diskName := app.Config.Storage.Default
+	fmt.Println(diskName)
 	if len(disk) > 0 {
 		diskName = storage.DiskName(disk[0])
 	}

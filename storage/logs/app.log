@@ -68,3 +68,15 @@
 [2022-09-09 01:57:20.793]	local.info	github.com/taokunTeam/gin-base/main.go:14	log init success!
 [2022-09-09 02:10:17.437]	local.info	github.com/taokunTeam/gin-base/main.go:14	log init success!
 [2022-09-09 02:10:27.995]	local.info	github.com/taokunTeam/gin-base/main.go:14	log init success!
+[2022-09-14 00:15:03.442]	local.info	gin-base/main.go:14	log init success!
+[2022-09-14 00:18:24.914]	local.info	gin-base/main.go:14	log init success!
+[2022-09-14 00:19:04.464]	local.info	gin-base/main.go:14	log init success!
+[2022-09-14 01:01:42.281]	local.info	gin-base/main.go:14	log init success!
+[2022-09-14 01:02:47.908]	local.info	gin-base/main.go:14	log init success!
+[2022-09-14 01:07:32.343]	local.info	gin-base/main.go:14	log init success!
+[2022-09-14 01:12:32.917]	local.info	gin-base/main.go:14	log init success!
+[2022-09-14 01:13:36.299]	local.info	gin-base/main.go:14	log init success!
+[2022-09-14 01:14:25.758]	local.info	gin-base/main.go:14	log init success!
+[2022-09-14 01:16:41.677]	local.info	gin-base/main.go:14	log init success!
+[2022-09-14 01:19:21.512]	local.info	gin-base/main.go:14	log init success!
+[2022-09-14 01:20:20.274]	local.info	gin-base/main.go:14	log init success!

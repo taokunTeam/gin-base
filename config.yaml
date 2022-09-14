@@ -42,7 +42,7 @@ redis:
   password:
 
 storage:
-  default: local # 默认驱动
+  default: minio # 默认驱动
   disks:
     local:
       root_dir: ./storage/app # 本地存储根目录
@@ -61,3 +61,10 @@ storage:
       secret_key:
       is_ssl: true
       is_private: false
+    minio:
+      access_key_id: minio
+      access_key_secret: minioadmin123?$.
+      bucket: test
+      endpoint: 121.5.67.116:9000
+      is_ssl: false # 是否使用 https 协议
+      is_private: false # 是否私有读

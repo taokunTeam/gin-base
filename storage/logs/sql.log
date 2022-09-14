@@ -2140,3 +2140,837 @@
 
 2022/09/09 02:13:07 /Users/likangjian/wwwroot/gocode/src/github.com/taokunTeam/gin-base/app/services/media.go:70
 [37.113ms] [rows:1] INSERT INTO `media` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`) VALUES ('local',1,'local/test/20dbb71a-68d7-4a1c-93f6-b0ae5dd3c938.png','2022-09-09 02:13:07.015','2022-09-09 02:13:07.015')
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.477ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[27.417ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[12.864ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.158ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[12.583ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[6.693ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[21.711ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.611ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.275ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[12.739ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.042ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.370ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[12.379ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.882ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[12.027ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[13.409ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.195ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.290ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[6.600ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[14.049ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.861ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[12.519ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:15:03 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[13.629ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/09/14 00:15:18 /Users/likangjian/wwwroot/gocode/src/gin-base/app/services/user.go:32
+[12.236ms] [rows:1] SELECT * FROM `users` WHERE mobile = '18721934607' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/09/14 00:15:34 /Users/likangjian/wwwroot/gocode/src/gin-base/app/services/user.go:42
+[11.899ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/09/14 00:18:24 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.394ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:18:24 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.832ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:18:24 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[10.965ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 00:18:24 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.072ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:18:24 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[9.183ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:18:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[5.401ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 00:18:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[11.925ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 00:18:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[4.773ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:18:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[10.615ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:18:25 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[12.391ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 00:18:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.298ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:18:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[10.896ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:18:25 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[12.590ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 00:18:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.206ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:18:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[9.973ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:18:25 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[11.015ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/09/14 00:18:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[4.619ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:18:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[10.223ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:18:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[5.161ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/09/14 00:18:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[12.079ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/09/14 00:18:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.036ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:18:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.804ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:18:25 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[12.950ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[4.890ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[13.450ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[12.091ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.540ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.112ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[5.597ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[12.368ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.521ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.726ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[13.434ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.435ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.537ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[11.079ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[4.965ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.050ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[13.344ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.872ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.190ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[5.457ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[11.818ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.313ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[12.070ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 00:19:04 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[12.255ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.136ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.116ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[11.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.228ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.353ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[5.481ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[13.100ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.359ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.849ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[11.949ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.795ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.634ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[11.206ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.782ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.608ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[12.213ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.875ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.580ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[5.501ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[13.109ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.730ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[12.038ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:01:42 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[12.675ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/09/14 01:02:47 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.970ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:02:47 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[15.756ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[68.783ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[7.042ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[14.815ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[7.501ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[16.549ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[7.061ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[15.539ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[15.636ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.699ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[30.637ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[15.985ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.863ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[23.915ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[15.628ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[7.235ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[15.679ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[7.533ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[61.697ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[8.840ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[15.106ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:02:48 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[15.752ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.160ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[13.274ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[13.364ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.977ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[12.034ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[5.810ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[13.052ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.430ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[12.143ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[12.793ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[7.142ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[12.654ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[12.532ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.461ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.467ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[13.301ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.188ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.585ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[6.333ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[12.916ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.358ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.242ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:07:32 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[12.490ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/09/14 01:12:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[7.197ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:12:32 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[15.700ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[15.828ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[7.171ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[15.765ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[7.453ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[16.266ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.905ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[15.852ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[15.593ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[7.016ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[18.734ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[21.136ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[8.165ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[14.828ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[15.938ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[7.358ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[14.523ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[7.685ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[16.336ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.691ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[14.800ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:12:33 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[16.093ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[4.171ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[9.037ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[9.058ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[3.810ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[9.922ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[5.164ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[9.318ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[4.493ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[10.307ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[9.100ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[4.796ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[9.371ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[9.240ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[3.854ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[9.117ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[9.081ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[3.923ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[9.143ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[4.317ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[10.645ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[4.799ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[9.219ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:13:36 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[9.110ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/09/14 01:14:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.672ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:14:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[13.446ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:14:25 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[15.711ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 01:14:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[7.312ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:14:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[14.806ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:14:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[7.009ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 01:14:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[16.282ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 01:14:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[7.096ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:14:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[14.130ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:14:25 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[14.926ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 01:14:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[7.290ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:14:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[13.714ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:14:25 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[22.377ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 01:14:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[7.420ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:14:25 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[15.122ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:14:26 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[15.787ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/09/14 01:14:26 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[7.720ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:14:26 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[15.407ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:14:26 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[7.398ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/09/14 01:14:26 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[16.670ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/09/14 01:14:26 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[7.403ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:14:26 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[16.012ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:14:26 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[16.264ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.408ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[14.232ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[13.427ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[7.188ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[13.483ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[6.664ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[15.248ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.274ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[13.849ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[13.349ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.314ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[13.555ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[14.580ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.063ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[13.905ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[13.917ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[7.193ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[13.625ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[6.496ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[15.838ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.801ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[17.340ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:16:41 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[13.212ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.966ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[12.928ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[13.411ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.020ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[13.426ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[6.419ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[13.944ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.642ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[14.841ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[13.362ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.056ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[13.662ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[13.736ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.884ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[13.739ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[13.711ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[6.327ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[12.724ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[6.659ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[13.810ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.591ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[12.428ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:19:21 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[12.826ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[4.892ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.718ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[11.813ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.055ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.525ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[5.449ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[13.830ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.276ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.405ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[11.361ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.005ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.331ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[11.301ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.844ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.570ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[11.039ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.257ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.496ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[5.357ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[11.626ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[5.727ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[11.189ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 01:20:20 /Users/likangjian/wwwroot/gocode/src/gin-base/bootstrap/db.go:108
+[11.558ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
