@@ -42,22 +42,29 @@ redis:
   password:
 
 storage:
-  default: local # 默认驱动
+  default: oss # 默认驱动
   disks:
     local:
       root_dir: ./storage/app # 本地存储根目录
       app_url: http://localhost:8888/storage # 本地图片 url 前部
     ali_oss:
-      access_key_id:
-      access_key_secret:
-      bucket:
-      endpoint:
+      access_key_id: LTAI5t8Ccm8guea1ApcmN5W8
+      access_key_secret: liQRynIUlVR2TisNA3gqmxU3FnOJ0k
+      bucket: taokun-test
+      endpoint: oss-cn-hangzhou.aliyuncs.com
       is_ssl: true # 是否使用 https 协议
-      is_private: false # 是否私有读
+      is_private: true # 是否私有读
     qi_niu:
-      access_key:
-      bucket:
-      domain:
-      secret_key:
+      access_key: CeLqEu-mEMdslMd3ly2md_zNM4mlvTYNYv1veXPc
+      bucket: kangoroo-abbr
+      domain: rhqalmmym.hn-bkt.clouddn.com
+      secret_key: xoi5JfrkwWqE7y3xl6MpEzFxANJPx5TS9ub36R_L
       is_ssl: true
       is_private: false
+    minio:
+      access_key_id: minio
+      access_key_secret: Jiahong@123.com$
+      bucket: kangoroo-abbr
+      endpoint: 47.92.135.44:9000
+      is_ssl: false # 是否使用 https 协议
+      is_private: false # 是否私有读
