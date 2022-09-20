@@ -32,6 +32,15 @@ func main() {
 	// 初始化文件系统
 	bootstrap.InitializeStorage()
 
+	// 初始化rabbitMq
+	global.App.RabbitMQ = bootstrap.InitializeRabbitMq()
+	//程序关闭前，释放rabbitMq
+	defer func() {
+		if global.App.RabbitMQ != nil {
+			global.App.RabbitMQ.Close()
+		}
+	}()
+
 	// 启动服务器
 	bootstrap.RunServer()
 }

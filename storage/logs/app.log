@@ -1,0 +1,47 @@
+[2022-09-20 11:20:03.401]	local.info	gin-base/main.go:14	log init success!
+[2022-09-20 11:21:20.553]	local.info	gin-base/main.go:14	log init success!
+[2022-09-20 11:21:31.642]	local.info	gin-base/main.go:14	log init success!
+[2022-09-20 11:22:21.393]	local.info	gin-base/main.go:14	log init success!
+[2022-09-20 11:30:21.007]	local.info	gin-base/main.go:14	log init success!
+[2022-09-20 11:39:24.564]	local.info	gin-base/main.go:14	log init success!
+[2022-09-20 11:48:40.217]	local.info	gin-base/main.go:14	log init success!
+[2022-09-20 11:50:13.676]	local.info	gin-base/main.go:14	log init success!
+[2022-09-20 11:50:18.614]	local.info	gin-base/main.go:14	log init success!
+[2022-09-20 11:50:57.150]	local.info	gin-base/main.go:14	log init success!
+[2022-09-20 11:51:00.065]	local.info	gin-base/main.go:14	log init success!
+[2022-09-20 14:29:59.557]	local.info	gin-base/main.go:16	log init success!
+[2022-09-20 14:30:42.808]	local.info	gin-base/main.go:16	log init success!
+[2022-09-20 14:33:56.898]	local.info	gin-base/main.go:14	log init success!
+[2022-09-20 14:41:11.498]	local.info	gin-base/main.go:14	log init success!
+[2022-09-20 14:41:11.978]	local.info	bootstrap/rabbitMq.go:19	connect  RabbitMQ success!
+[2022-09-20 14:41:32.601]	local.info	gin-base/main.go:14	log init success!
+[2022-09-20 14:41:33.113]	local.info	bootstrap/rabbitMq.go:19	connect  RabbitMQ success!
+[2022-09-20 14:51:53.003]	local.error	common/upload.go:35	Failed to open a channel:	{"err": "Exception (504) Reason: \"channel/connection is not open\""}
+[2022-09-20 14:54:45.171]	local.info	gin-base/main.go:14	log init success!
+[2022-09-20 14:54:45.572]	local.info	bootstrap/rabbitMq.go:19	connect  RabbitMQ success!
+[2022-09-20 14:54:54.177]	local.info	gin-base/main.go:14	log init success!
+[2022-09-20 14:54:54.638]	local.info	bootstrap/rabbitMq.go:19	connect  RabbitMQ success!
+[2022-09-20 14:54:59.650]	local.info	gin-base/main.go:14	log init success!
+[2022-09-20 14:55:00.193]	local.info	bootstrap/rabbitMq.go:19	connect  RabbitMQ success!
+[2022-09-20 14:55:08.911]	local.error	common/upload.go:35	Failed to open a channel:	{"err": null}
+[2022-09-20 14:55:08.911]	local.error	common/upload.go:45	Failed to declare a queue	{"err": null}
+[2022-09-20 14:55:08.911]	local.error	common/upload.go:60	Failed to publish a message	{"err": null}
+[2022-09-20 14:55:08.911]	local.error	common/upload.go:61	Failed to publish a message	{"err": "Hello World!"}
+[2022-09-20 14:57:12.510]	local.info	gin-base/main.go:14	log init success!
+[2022-09-20 14:57:13.020]	local.info	bootstrap/rabbitMq.go:19	connect  RabbitMQ success!
+[2022-09-20 15:10:53.787]	local.error	common/upload.go:35	Failed to open a channel:	{"err": null}
+[2022-09-20 15:10:53.790]	local.error	common/upload.go:45	Failed to declare a queue	{"err": null}
+[2022-09-20 15:10:53.790]	local.error	common/upload.go:60	Failed to publish a message	{"err": null}
+[2022-09-20 15:10:53.790]	local.error	common/upload.go:61	Failed to publish a message	{"err": "Hello World!"}
+[2022-09-20 15:10:54.670]	local.error	common/upload.go:35	Failed to open a channel:	{"err": null}
+[2022-09-20 15:10:54.671]	local.error	common/upload.go:45	Failed to declare a queue	{"err": null}
+[2022-09-20 15:10:54.671]	local.error	common/upload.go:60	Failed to publish a message	{"err": null}
+[2022-09-20 15:10:54.671]	local.error	common/upload.go:61	Failed to publish a message	{"err": "Hello World!"}
+[2022-09-20 15:10:55.455]	local.error	common/upload.go:35	Failed to open a channel:	{"err": null}
+[2022-09-20 15:10:55.456]	local.error	common/upload.go:45	Failed to declare a queue	{"err": null}
+[2022-09-20 15:10:55.456]	local.error	common/upload.go:60	Failed to publish a message	{"err": null}
+[2022-09-20 15:10:55.456]	local.error	common/upload.go:61	Failed to publish a message	{"err": "Hello World!"}
+[2022-09-20 15:38:33.364]	local.error	common/upload.go:35	Failed to open a channel:	{"err": null}
+[2022-09-20 15:38:33.365]	local.error	common/upload.go:45	Failed to declare a queue	{"err": null}
+[2022-09-20 15:38:33.365]	local.error	common/upload.go:60	Failed to publish a message	{"err": null}
+[2022-09-20 15:38:33.365]	local.error	common/upload.go:61	Failed to publish a message	{"err": "Hello World!"}
