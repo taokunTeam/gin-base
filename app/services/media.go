@@ -58,7 +58,7 @@ func (mediaService *mediaService) SaveImage(params request.ImageUpload) (result 
 	}
 	key := mediaService.makeFaceDir(params.Business) + "/" + mediaService.HashName(params.Image.Filename)
 	disk := global.App.Disk()
-	err = disk.Put(localPrefix+key, file, params.Image.Size, params.Image.Header.Get("content-type"))
+	err = disk.Put(localPrefix+key, file, params.Image.Size, params.Image.Header.Get("Content-Type"))
 	if err != nil {
 		return
 	}

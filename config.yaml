@@ -35,6 +35,12 @@ jwt:
   jwt_blacklist_grace_period: 10
   refresh_grace_period: 43200
 
+rabbitmq:
+  host: 127.0.0.1
+  port: 5672
+  name: guest
+  password: guest
+
 redis:
   host: 121.5.67.116
   port: 6379
@@ -42,7 +48,7 @@ redis:
   password:
 
 storage:
-  default: local # 默认驱动
+  default: minio # 默认驱动
   disks:
     local:
       root_dir: ./storage/app # 本地存储根目录

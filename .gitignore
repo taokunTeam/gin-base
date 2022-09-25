@@ -13,3 +13,9 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+#日志目录
+logs/
+
+#编译目录
+tmp/

@@ -1,11 +1,10 @@
 package global
 
 import (
-	"fmt"
-
 	"github.com/taokunTeam/gin-base/config"
 
 	"github.com/go-redis/redis/v8"
+	amqp "github.com/rabbitmq/amqp091-go"
 	"github.com/spf13/viper"
 	"github.com/taokunTeam/go-storage/storage"
 	"go.uber.org/zap"
@@ -18,6 +17,7 @@ type Application struct {
 	Log         *zap.Logger
 	DB          *gorm.DB
 	Redis       *redis.Client
+	RabbitMQ    *amqp.Connection
 }
 
 var App = new(Application)
@@ -25,7 +25,6 @@ var App = new(Application)
 func (app *Application) Disk(disk ...string) storage.Storage {
 	// 若未传参，默认使用配置文件驱动
 	diskName := app.Config.Storage.Default
-	fmt.Println(diskName)
 	if len(disk) > 0 {
 		diskName = storage.DiskName(disk[0])
 	}
