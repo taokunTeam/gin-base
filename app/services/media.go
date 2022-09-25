@@ -3,7 +3,6 @@ package services
 import (
 	"context"
 	"errors"
-	"fmt"
 	"path"
 	"strconv"
 	"time"
@@ -59,8 +58,7 @@ func (mediaService *mediaService) SaveImage(params request.ImageUpload) (result 
 	}
 	key := mediaService.makeFaceDir(params.Business) + "/" + mediaService.HashName(params.Image.Filename)
 	disk := global.App.Disk()
-	fmt.Println(localPrefix + key)
-	err = disk.Put(localPrefix+key, file, params.Image.Size)
+	err = disk.Put(localPrefix+key, file, params.Image.Size, params.Image.Header.Get("content-type"))
 	if err != nil {
 		return
 	}

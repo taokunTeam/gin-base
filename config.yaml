@@ -42,11 +42,7 @@ redis:
   password:
 
 storage:
-<<<<<<< HEAD
-  default: minio # 默认驱动
-=======
-  default: oss # 默认驱动
->>>>>>> eff1eea42171edbf04d0b72e9d3441826f10d1ef
+  default: local # 默认驱动
   disks:
     local:
       root_dir: ./storage/app # 本地存储根目录
@@ -63,12 +59,19 @@ storage:
       bucket: kangoroo-abbr
       domain: rhqalmmym.hn-bkt.clouddn.com
       secret_key: xoi5JfrkwWqE7y3xl6MpEzFxANJPx5TS9ub36R_L
-      is_ssl: true
-      is_private: false
+      is_ssl: false
+      is_private: true
     minio:
       access_key_id: minio
       access_key_secret: Jiahong@123.com$
       bucket: kangoroo-abbr
+      endpoint: 47.92.135.44:9000
+      is_ssl: false # 是否使用 https 协议
+      is_private: false # 是否私有读
+    obs:
+      access_key_id: HEP7MTW5UXCR6ZJ2ISTH
+      access_key_secret: wpmPrRaB4WA5dIZkldHunnVdeqBsJoqfbdPk9L1w
+      bucket: obs://taokun-test
       endpoint: 47.92.135.44:9000
       is_ssl: false # 是否使用 https 协议
       is_private: false # 是否私有读
