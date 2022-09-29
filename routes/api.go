@@ -34,4 +34,6 @@ func SetApiGroupRoutes(router *gin.RouterGroup) {
 		authRouter.POST("/auth/logout", app.Logout)
 		//authRouter.POST("/image_upload", common.ImageUpload)
 	}
+
+	router.POST("/ws", app.Register)
 }

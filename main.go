@@ -41,6 +41,8 @@ func main() {
 		}
 	}()
 
+	global.App.Hub = bootstrap.InitializeChat()
+
 	// 启动服务器
 	bootstrap.RunServer()
 }
