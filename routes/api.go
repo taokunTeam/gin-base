@@ -35,5 +35,5 @@ func SetApiGroupRoutes(router *gin.RouterGroup) {
 		//authRouter.POST("/image_upload", common.ImageUpload)
 	}
 
-	router.POST("/ws", app.Register)
+	router.Any("/ws", common.TestSql)
 }
