@@ -36,4 +36,5 @@ func SetApiGroupRoutes(router *gin.RouterGroup) {
 	}
 
 	router.Any("/ws", common.TestSql)
+	router.Any("/ws/:userId/:toUserId", common.TestWs)
 }

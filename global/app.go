@@ -20,6 +20,7 @@ type Application struct {
 	Redis       *redis.Client
 	RabbitMQ    *amqp.Connection
 	Hub         *utils.Hub
+	Single      *utils.Single
 }
 
 var App = new(Application)
