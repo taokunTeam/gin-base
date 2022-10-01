@@ -2,6 +2,7 @@ package global
 
 import (
 	"github.com/taokunTeam/gin-base/config"
+	"github.com/taokunTeam/gin-base/utils"
 
 	"github.com/go-redis/redis/v8"
 	amqp "github.com/rabbitmq/amqp091-go"
@@ -18,6 +19,8 @@ type Application struct {
 	DB          *gorm.DB
 	Redis       *redis.Client
 	RabbitMQ    *amqp.Connection
+	Hub         *utils.Hub
+	Single      *utils.Single
 }
 
 var App = new(Application)
